@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+
+<body>
+    <h3>Calculadora</h3>
+
+    <!-- <form>
+        <table border="0" cellpadding="4" width="200">
+            <tr>
+                <td><label for="txtValor1">1º Valor:</label></td>
+                <td><input type="text" id="txtValor1"></td>
+            </tr>
+            <tr>
+                <td><label for="txtValor2">2º Valor:</label></td>
+                <td><input type="text" id="txtValor2"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table width="100%">
+                        <tr>
+                            <td><input type="button" value="+" id="btnAdicao" style="width:100%"></td>
+                            <td><input type="button" value="-" id="btnSubtracao" style="width:100%"></td>
+                            <td><input type="button" value="*" id="btnMultiplicacao" style="width:100%"></td>
+                            <td><input type="button" value="/" id="btnDivisao" style="width:100%"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="btnResultado">Resultado:</label></td>
+                <td><input type="text" id="btnResultado" readonly></td>
+            </tr>
+        </table>
+    </form> -->
+
+    <form class="formulario">
+        <div class="campo">
+            <label for="txtValor1">1º Valor: </label>
+            <input type="text" id="txtValor1">
+        </div>
+
+        <div class="campo">
+            <label for="txtValor2">2º Valor: </label>
+            <input type="text" id="txtValor2">
+        </div>
+
+        <div class="botoes">
+            <input type="button" value="+" id="btnAdicao">
+            <input type="button" value="-" id="btnSubtracao">
+            <input type="button" value="*" id="btnMultiplicacao">
+            <input type="button" value="/" id="btnDivisao">
+        </div>
+
+        <div class="campo">
+            <label for="btnResultado">Resultado: </label>
+            <input type="text" id="btnResultado" readonly>
+        </div>
+    </form>
+
+    <style>
+        .formulario {
+            width: 300px;
+        }
+
+        .campo {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+
+        label {
+            min-width: 80px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 5px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .botoes input[type="button"] {
+            flex: 1;
+            padding: 5px 0;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
