@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    font-weight: bold;
+}
+
+span {
+    color: red;
+}
+
+.candidatos {
+    display: flex;
+    justify-content: center;
+}
+
+.candidato {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(208, 255, 138);
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.candidato:hover {
+    background-color: rebeccapurple;
+}
+
+.candidato.winning {
+    background-color: #4caf50;
+    color: #fff;
+}
