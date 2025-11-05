@@ -1,0 +1,19 @@
+body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input {
+      margin-bottom: 10px;
+    
+    }
+
+    button {
+      margin-bottom: 15px;
+    }
