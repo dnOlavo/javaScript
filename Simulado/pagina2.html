@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado - Página 2</title>
+
+    <link rel="stylesheet" href="css/pagina2.css">
+</head>
+<body>
+    <h3>1) Texto informado pelo usuário na página anterior</h3>
+    <p id="textoArmazenado"></p>
+
+    <h3>2) Você gostaria de analisar a informação disponibilizada pelo usuário na página anterior?</h3>
+    <select id="escolha">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+
+    <p><strong>OBS:</strong> Se você responder "não" na pergunta anterior (2), por favor informe um novo texto na caixa abaixo:</p>
+    <input type="text" id="textoNovo" size="60">
+
+    <br><br>
+
+    <button id="btnAnalisar">Analisar</button>
+
+    <hr>
+
+    <label>3) Quantidade de palavras contidas no texto: <strong id="resultadoPalavras"></strong></label> <br>
+
+    <label>4) Palavras iniciadas com a letra M:</label>
+    <input type="text" id="resultadoM" size="40" class="input" readonly> <br>
+
+    <label>5) Primeira palavra do texto:</label>
+    <input type="text" id="resultadoPrimeira" size="40" class="input" readonly> <br>
+
+    <label>6) Segunda palavra do texto:</label>
+    <input type="text" id="resultadoSegunda" size="40" class="input" readonly> <br>
+
+    <label>7) Última palavra do texto:</label>
+    <input type="text" id="resultadoUltima" size="40" class="input" readonly> <br>
+
+    <br>
+
+    <button onclick="window.location.href='pagina3.html'">Abrir a página do papai noel</button>
+
+    <script src="js/pagina2.js"></script>
+</body>
+</html>
